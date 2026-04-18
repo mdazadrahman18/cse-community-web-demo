@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPI CSE Community — Rajshahi Polytechnic Institute</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" onclick="closeMobileNav()">✕</button>
+        <a href="#about" onclick="closeMobileNav()">About</a>
+        <a href="#clubs" onclick="closeMobileNav()">Clubs</a>
+        <a href="#notices" onclick="closeMobileNav()">Notices</a>
+        <a href="#blogs" onclick="closeMobileNav()">Blogs</a>
+        <a href="#portal" onclick="closeMobileNav()">Portal</a>
+        <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="nav-logo">
+            <div class="logo-badge">RPI</div>
+            <div class="logo-text">
+                <span>RPI CSE Community</span>
+                <span>Rajshahi Polytechnic Institute</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#clubs">Clubs</a></li>
+            <li><a href="#notices">Notices</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#portal">Portal</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+            <a href="#portal" class="btn-ghost">Log In</a>
+            <a href="#portal" class="btn-primary">Join Community</a>
+        </div>
+
+        <button class="hamburger" onclick="openMobileNav()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-tag">🎓 RPI CSE Community</div>
+                <h1>Where <em>Tech Minds</em> Collaborate & Grow</h1>
+                <p>The official community platform of Rajshahi Polytechnic Institute's CSE department — connecting
+                    students,
+                    clubs, and opportunities in one place.</p>
+                <div class="hero-actions">
+                    <a href="#portal" class="btn-primary btn-lg">Join the Community</a>
+                    <a href="#clubs" class="btn-ghost btn-lg">Explore Clubs</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>Members</span>
+                    </div>
+                    <div class="stat">
+                        <strong>3</strong>
+                        <span>Active Clubs</span>
+                    </div>
+                    <div class="stat">
+                        <strong>50+</strong>
+                        <span>Events/Year</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="community-card">
+                    <div class="card-header">
+                        <div class="card-avatar">🏫</div>
+                        <div>
+                            <h4>RPI CSE Community</h4>
+                            <p>Rajshahi Polytechnic Institute</p>
+                        </div>
+                    </div>
+                    <div class="club-grid">
+                        <div class="club-item">
+                            <div class="club-icon">💻</div>
+                            <div class="club-name">IT Club</div>
+                        </div>
+                        <div class="club-item">
+                            <div class="club-icon">🤖</div>
+                            <div class="club-name">Robotics</div>
+                        </div>
+                        <div class="club-item">
+                            <div class="club-icon">⌨️</div>
+                            <div class="club-name">Programming</div>
+                        </div>
+                    </div>
+                    <div class="notice-preview">
+                        <div class="notice-row">
+                            <div class="notice-dot"></div>
+                            <div class="notice-text">Programming Contest registration open</div>
+                            <div class="notice-date">Today</div>
+                        </div>
+                        <div class="notice-row">
+                            <div class="notice-dot" style="background:var(--gold)"></div>
+                            <div class="notice-text">Robotics Workshop — April 25</div>
+                            <div class="notice-date">2d ago</div>
+                        </div>
+                        <div class="notice-row">
+                            <div class="notice-dot" style="background:#93c5fd"></div>
+                            <div class="notice-text">New semester schedule released</div>
+                            <div class="notice-date">3d ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="max-w">
+            <div class="section-label">Community Info</div>
+            <h2 class="section-title">About RPI CSE Community</h2>
+            <p class="section-desc">A student-led tech community fostering innovation, collaboration, and skill
+                development
+                across all CSE disciplines at Rajshahi Polytechnic Institute.</p>
+
+            <div class="about-grid">
+                <div>
+                    <p style="color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:20px;">
+                        The RPI CSE Community was established to bridge the gap between academic learning and real-world
+                        technology.
+                        We bring together passionate students, faculty advisors, and industry mentors to create a
+                        thriving ecosystem
+                        of learning and innovation.
+                    </p>
+                    <p style="color:var(--muted);font-size:15px;line-height:1.8;">
+                        Through our clubs, events, workshops, and competitions, members gain hands-on experience in
+                        cutting-edge
+                        technologies — from artificial intelligence to embedded systems and competitive programming.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h4>Skill Development</h4>
+                            <p>Workshops, bootcamps and mentorship programs</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🤝</div>
+                            <h4>Networking</h4>
+                            <p>Connect with peers, alumni and industry professionals</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏆</div>
+                            <h4>Competitions</h4>
+                            <p>Hackathons, coding contests and project showcases</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📚</div>
+                            <h4>Resources</h4>
+                            <p>Study materials, guides and open-source projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image-block">
+                    <div class="section-label" style="margin-bottom:20px;">Institute Info</div>
+                    <div class="college-info-item">
+                        <div class="cii-icon">🏛️</div>
+                        <div class="cii-content">
+                            <strong>Rajshahi Polytechnic Institute</strong>
+                            <span>Est. 1963 · Government Polytechnic</span>
+                        </div>
+                    </div>
+                    <div class="college-info-item">
+                        <div class="cii-icon">📍</div>
+                        <div class="cii-content">
+                            <strong>Location</strong>
+                            <span>Rajshahi, Bangladesh</span>
+                        </div>
+                    </div>
+                    <div class="college-info-item">
+                        <div class="cii-icon">🎓</div>
+                        <div class="cii-content">
+                            <strong>Department</strong>
+                            <span>Computer Science & Engineering (CSE)</span>
+                        </div>
+                    </div>
+                    <div class="college-info-item">
+                        <div class="cii-icon">👨‍🏫</div>
+                        <div class="cii-content">
+                            <strong>Faculty Advisor</strong>
+                            <span>CSE Department, RPI</span>
+                        </div>
+                    </div>
+                    <div class="college-info-item">
+                        <div class="cii-icon">🌐</div>
+                        <div class="cii-content">
+                            <strong>Affiliation</strong>
+                            <span>Bangladesh Technical Education Board (BTEB)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs -->
+    <section id="clubs">
+        <div class="max-w">
+            <div class="section-label">Our Clubs</div>
+            <h2 class="section-title">Join a Club, Build Your Future</h2>
+            <p class="section-desc">Three specialized clubs, each focused on a unique technology domain. Find your
+                passion and
+                grow with a community of like-minded peers.</p>
+
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-card-icon">💻</div>
+                    <h3>IT Club</h3>
+                    <p>Explore the world of information technology — from networking and cybersecurity to web
+                        development, system
+                        administration, and digital innovation projects.</p>
+                    <div class="club-tag-list">
+                        <span class="tag">Web Dev</span>
+                        <span class="tag">Networking</span>
+                        <span class="tag">Cybersecurity</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <a href="#" class="club-link">Explore IT Club →</a>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-card-icon">🤖</div>
+                    <h3>Robotics Club</h3>
+                    <p>Design, build, and program robots. Dive into embedded systems, Arduino, Raspberry Pi, IoT
+                        devices, and
+                        compete in regional and national robotics competitions.</p>
+                    <div class="club-tag-list">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Electronics</span>
+                        <span class="tag">AI/ML</span>
+                    </div>
+                    <a href="#" class="club-link">Explore Robotics →</a>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-card-icon">⌨️</div>
+                    <h3>Programming Club</h3>
+                    <p>Sharpen your algorithmic thinking and coding skills. Participate in competitive programming,
+                        solve
+                        challenges on Codeforces, LeetCode, and prepare for ICPC.</p>
+                    <div class="club-tag-list">
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">ICPC</span>
+                    </div>
+                    <a href="#" class="club-link">Explore Programming →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-line"></div>
+
+    <!-- Notices & Updates -->
+    <section id="notices">
+        <div class="max-w">
+            <div class="section-label">Notice & Updates</div>
+            <h2 class="section-title">Latest News & Announcements</h2>
+            <p class="section-desc">Stay up to date with the latest notices, events, and announcements from RPI CSE
+                Community
+                and its clubs.</p>
+
+            <div class="notices-layout">
+                <div class="notice-list">
+                    <div class="notice-card">
+                        <div class="notice-badge badge-new">New</div>
+                        <div>
+                            <h4>Inter-Department Programming Contest 2025</h4>
+                            <p>Registration is now open for the annual programming contest. Participants can register
+                                individually or
+                                in teams of up to 3 members. Problem sets will cover data structures, algorithms, and
+                                dynamic
+                                programming.</p>
+                            <div class="notice-meta">📅 Posted April 17, 2025 · Programming Club</div>
+                        </div>
+                    </div>
+
+                    <div class="notice-card">
+                        <div class="notice-badge badge-event">Event</div>
+                        <div>
+                            <h4>Arduino & IoT Workshop — Session 3</h4>
+                            <p>The Robotics Club is hosting the third session of the Arduino & IoT workshop series.
+                                Topics include
+                                sensor integration, servo control, and building a mini weather station.</p>
+                            <div class="notice-meta">📅 April 25, 2025 · Robotics Club · Lab 302</div>
+                        </div>
+                    </div>
+
+                    <div class="notice-card">
+                        <div class="notice-badge badge-info">Info</div>
+                        <div>
+                            <h4>Semester 6 Class Schedule Published</h4>
+                            <p>The updated class routine for Semester 6 CSE students has been published. Members can
+                                view the schedule
+                                in the student portal under the "Academics" section.</p>
+                            <div class="notice-meta">📅 April 14, 2025 · Administration</div>
+                        </div>
+                    </div>
+
+                    <div class="notice-card">
+                        <div class="notice-badge badge-event">Event</div>
+                        <div>
+                            <h4>IT Club Project Showcase 2025</h4>
+                            <p>The IT Club is organizing a project showcase for all CSE students. Submit your web,
+                                mobile, or software
+                                projects before May 1 for a chance to win prizes and certificates.</p>
+                            <div class="notice-meta">📅 May 10, 2025 · IT Club · Main Auditorium</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="events-sidebar">
+                    <h3>Upcoming Events</h3>
+                    <div class="event-item">
+                        <div class="event-date-block">
+                            <div class="day">25</div>
+                            <div class="mon">Apr</div>
+                        </div>
+                        <div>
+                            <h4>IoT Workshop Session 3</h4>
+                            <p>Robotics Club · Lab 302</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date-block">
+                            <div class="day">02</div>
+                            <div class="mon">May</div>
+                        </div>
+                        <div>
+                            <h4>Programming Contest</h4>
+                            <p>Programming Club · Computer Lab</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date-block">
+                            <div class="day">10</div>
+                            <div class="mon">May</div>
+                        </div>
+                        <div>
+                            <h4>IT Project Showcase</h4>
+                            <p>IT Club · Main Auditorium</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date-block" style="background:linear-gradient(135deg,#10b981,#06b6d4)">
+                            <div class="day">20</div>
+                            <div class="mon">May</div>
+                        </div>
+                        <div>
+                            <h4>Community Annual Meet</h4>
+                            <p>All Clubs · RPI Campus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs -->
+    <section id="blogs">
+        <div class="max-w">
+            <div class="section-label">Blogs & Articles</div>
+            <h2 class="section-title">Knowledge Shared, Skills Amplified</h2>
+            <p class="section-desc">Read articles, tutorials, and project write-ups authored by RPI CSE Community
+                members and
+                club leads.</p>
+
+            <div class="blogs-grid">
+                <div class="blog-card">
+                    <div class="blog-thumb blog-thumb-1">🤖</div>
+                    <div class="blog-body">
+                        <div class="blog-category">Robotics · Tutorial</div>
+                        <h3>Getting Started with Arduino: Your First IoT Project</h3>
+                        <p>A beginner-friendly guide to building a temperature monitoring system using Arduino and DHT11
+                            sensor with
+                            real-time data display.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <div class="blog-author">By <strong>Rahim Uddin</strong> · Robotics Club</div>
+                        <a href="#" class="read-more">Read →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-thumb blog-thumb-2">⚡</div>
+                    <div class="blog-body">
+                        <div class="blog-category">Programming · Guide</div>
+                        <h3>Dynamic Programming Demystified: From Theory to Contest</h3>
+                        <p>Master DP techniques with practical examples from competitive programming problems —
+                            memoization,
+                            tabulation, and optimization tricks.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <div class="blog-author">By <strong>Nusrat Jahan</strong> · Programming Club</div>
+                        <a href="#" class="read-more">Read →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-thumb blog-thumb-3">🌐</div>
+                    <div class="blog-body">
+                        <div class="blog-category">IT · Web Dev</div>
+                        <h3>Building a Full-Stack Web App with Django & React in 2025</h3>
+                        <p>Step-by-step walkthrough of creating a modern full-stack application — from backend API
+                            design to React
+                            frontend deployment.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <div class="blog-author">By <strong>Farhan Islam</strong> · IT Club</div>
+                        <a href="#" class="read-more">Read →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:36px;">
+                <a href="#" class="btn-ghost btn-lg">View All Articles →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portal -->
+    <section id="portal">
+        <div class="max-w">
+            <div class="section-label">Individual Portal</div>
+            <h2 class="section-title">Your Personal Community Dashboard</h2>
+            <p class="section-desc">Create your student account to access exclusive club content, track your activities,
+                manage registrations, and connect with peers.</p>
+
+            <div class="portal-grid">
+                <div class="portal-features">
+                    <div class="portal-feat">
+                        <div class="pf-icon pf-blue">👤</div>
+                        <div class="pf-content">
+                            <h4>Student Profile</h4>
+                            <p>Showcase your skills, club memberships, projects, and achievements in a personalized
+                                profile visible to
+                                the community.</p>
+                        </div>
+                    </div>
+                    <div class="portal-feat">
+                        <div class="pf-icon pf-cyan">📋</div>
+                        <div class="pf-content">
+                            <h4>Event Registration</h4>
+                            <p>Browse and register for workshops, contests, and events directly from your dashboard with
+                                one click.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portal-feat">
+                        <div class="pf-icon pf-gold">🏅</div>
+                        <div class="pf-content">
+                            <h4>Certificates & Badges</h4>
+                            <p>Earn digital certificates and achievement badges for participation in events,
+                                competitions, and
+                                contributions.</p>
+                        </div>
+                    </div>
+                    <div class="portal-feat">
+                        <div class="pf-icon pf-green">💬</div>
+                        <div class="pf-content">
+                            <h4>Community Forums</h4>
+                            <p>Engage in discussions, ask questions, share resources, and collaborate with club members
+                                through the
+                                portal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portal-mockup">
+                    <div class="pm-header">
+                        <h4>Student Portal</h4>
+                        <div class="online-dot">Online</div>
+                    </div>
+                    <div class="pm-profile">
+                        <div class="pm-avatar">👨‍💻</div>
+                        <div class="pm-info">
+                            <strong>Md. Azad Rahman</strong>
+                            <span>Semester 5 · CSE · RPI</span>
+                        </div>
+                        <div class="pm-badge">Active</div>
+                    </div>
+                    <div class="pm-stats">
+                        <div class="pm-stat"><strong>3</strong><span>Clubs</span></div>
+                        <div class="pm-stat"><strong>12</strong><span>Events</span></div>
+                        <div class="pm-stat"><strong>5</strong><span>Badges</span></div>
+                    </div>
+                    <div class="pm-activities">
+                        <div class="pm-act-title">Recent Activity</div>
+                        <div class="pm-act-item">
+                            <div class="pm-act-icon">✅</div>
+                            <div class="pm-act-text">Registered for Programming Contest</div>
+                            <div class="pm-act-time">2h ago</div>
+                        </div>
+                        <div class="pm-act-item">
+                            <div class="pm-act-icon">📝</div>
+                            <div class="pm-act-text">Published blog post on Arduino</div>
+                            <div class="pm-act-time">1d ago</div>
+                        </div>
+                        <div class="pm-act-item">
+                            <div class="pm-act-icon">🏅</div>
+                            <div class="pm-act-text">Earned "Workshop Attendee" badge</div>
+                            <div class="pm-act-time">3d ago</div>
+                        </div>
+                        <div class="pm-act-item">
+                            <div class="pm-act-icon">🤝</div>
+                            <div class="pm-act-text">Joined Robotics Club</div>
+                            <div class="pm-act-time">1wk ago</div>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:10px;margin-top:20px;">
+                        <a href="#" class="btn-primary" style="flex:1;text-align:center;padding:10px;">Sign Up Free</a>
+                        <a href="#" class="btn-ghost" style="flex:1;text-align:center;padding:10px;">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="max-w">
+            <div class="section-label">Contact Us</div>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-desc">Have questions about the community, clubs, or membership? We'd love to hear from
+                you.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="ci-icon">📍</div>
+                        <div class="ci-content">
+                            <strong>Address</strong>
+                            <span>Rajshahi Polytechnic Institute, Rajshahi, Bangladesh</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon">📧</div>
+                        <div class="ci-content">
+                            <strong>Email</strong>
+                            <span>cse@rpi.edu.bd</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon">📞</div>
+                        <div class="ci-content">
+                            <strong>Phone</strong>
+                            <span>+880-721-XXXXXX</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon">🕐</div>
+                        <div class="ci-content">
+                            <strong>Office Hours</strong>
+                            <span>Saturday – Thursday: 9:00 AM – 5:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p style="font-size:13px;color:var(--muted);margin-bottom:12px;font-weight:600;">Follow Us</p>
+                        <div class="social-row">
+                            <a href="#" class="social-btn">📘</a>
+                            <a href="#" class="social-btn">📷</a>
+                            <a href="#" class="social-btn">🐦</a>
+                            <a href="#" class="social-btn">💼</a>
+                            <a href="#" class="social-btn">▶️</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Arif">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Hossain">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="arif@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <select>
+                            <option value="">Select a topic…</option>
+                            <option>Club Membership</option>
+                            <option>Event Inquiry</option>
+                            <option>Partnership</option>
+                            <option>General Query</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Write your message here…"></textarea>
+                    </div>
+                    <button class="btn-primary" style="width:100%;padding:14px;font-size:15px;">Send Message →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo" style="margin-bottom:4px;display:inline-flex;">
+                    <div class="logo-badge">RPI</div>
+                    <div class="logo-text">
+                        <span>RPI CSE Community</span>
+                        <span>Rajshahi Polytechnic Institute</span>
+                    </div>
+                </a>
+                <p>A student-driven technology community at Rajshahi Polytechnic Institute, fostering innovation,
+                    collaboration,
+                    and growth in the CSE department.</p>
+                <div class="social-row">
+                    <a href="#" class="social-btn">📘</a>
+                    <a href="#" class="social-btn">📷</a>
+                    <a href="#" class="social-btn">▶️</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Community</h5>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#clubs">Our Clubs</a></li>
+                    <li><a href="#notices">Notices</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#portal">Student Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Clubs</h5>
+                <ul>
+                    <li><a href="#">IT Club</a></li>
+                    <li><a href="#">Robotics Club</a></li>
+                    <li><a href="#">Programming Club</a></li>
+                    <li><a href="#">Join a Club</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Events Calendar</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Alumni Network</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">RPI Official Site</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 RPI CSE Community, Rajshahi Polytechnic Institute. All rights reserved.</p>
+            <span>Made with ❤️ by RPI CSE Community</span>
+        </div>
+    </footer>
+</body>
+
+</html>
